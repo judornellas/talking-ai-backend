@@ -1,0 +1,20 @@
+{
+  "name": "talking-ai-backend",
+  "version": "1.0.0",
+  "description": "AI-powered backend using OpenAI API",
+  "main": "api/ask.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy",
+    "lint": "eslint api/"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
