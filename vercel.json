@@ -1,0 +1,24 @@
+{
+  "buildCommand": "npm install",
+  "devCommand": "vercel dev",
+  "env": {
+    "OPENAI_API_KEY": "@openai_api_key"
+  },
+  "routes": [
+    {
+      "src": "^/api/.*$",
+      "dest": "/api"
+    },
+    {
+      "src": "^/_vercel/speed-insights/.*$",
+      "status": 404
+    }
+  ],
+  "functions": {
+    "api/ask.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "framework": "manual"
+}

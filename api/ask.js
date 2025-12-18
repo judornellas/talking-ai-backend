@@ -1,3 +1,10 @@
+import { inject } from '@vercel/speed-insights';
+
+// Initialize Speed Insights for performance monitoring
+if (process.env.NODE_ENV === 'production') {
+  inject();
+}
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
