@@ -1,0 +1,22 @@
+{
+  "name": "talking-ai-backend",
+  "version": "1.0.0",
+  "description": "Backend for talking AI application",
+  "main": "api/ask.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build needed for serverless functions'",
+    "lint": "echo 'Linting...'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
